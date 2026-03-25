@@ -13,7 +13,7 @@
     --main-title-color: #f9faf8;
     --main-title-weight: 900;
     --secondarytext-header-link-text-size: 18px;
-    --secondarytext-header-link-tex-color: #E5E7EB;
+    --secondarytext-header-link-text-color: #E5E7EB;
     --logo-size: 24px;
     --logo-color: #f9faf8;
     --btn-color-call-to-action-bg: #3882F6;
@@ -24,4 +24,208 @@
     --quote-text-size: 36px;
     --quote-text-color: #1f2937;
     --quote-text-weight: 300;
+    --bg-container-img-header-color: #808080;
+    --text-footer-color: #ffffff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: var(--bg-hero-footer);
+    padding: 10px 0 0 0;
+}
+
+.container-logo-list-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    font-size: var(--logo-size);
+    color: var(--logo-color);
+}
+
+.list-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.link {
+    font-size: var(--secondarytext-header-link-text-size);
+    color: var(--secondarytext-header-link-text-color);
+    text-decoration: none;
+}
+
+.container-content-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    margin: 100px;
+}
+
+.container-title-text-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 400px;
+    flex-wrap: wrap;
+}
+
+.main-title {
+    font-size: var(--main-title-size);
+    font-weight: var(--main-title-weight);
+    color: var(--main-title-color);
+}
+
+.text-header {
+    color: var(--secondarytext-header-link-text-color);
+}
+
+.btn-sign-up-header {
+    width: 100px;
+    background-color: var(--btn-color-call-to-action-bg);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+.link-sign-up-header {
+    text-decoration: none;
+    color: var(--secondarytext-header-link-text-color);
+}
+
+.container-header-for-img {
+    height: 200px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--quote-text-color);
+    background-color: var(--bg-container-img-header-color);
+    color: var(--secondarytext-header-link-text-color);
+    text-align: center;
+    flex: 0 1 auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 40px 0 100px 0;
+}
+
+.list-information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.item-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    flex: 0 1 200px;
+}
+
+.box-item-information {
+    height: 150px;
+    width: 150px;
+    border: 3px solid var(--btn-color-call-to-action-bg);
+    border-radius: 15px;
+}
+
+.testimonial {
+    background: var(--bg-quote-section);
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial-container-texts {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+
+}
+
+.testimonial-title {
+    font-size: var(--quote-text-size);
+    font-weight: var(--quote-text-weight);
+    color: var(--quote-text-color);
+}
+
+.testimonial-text {
+    align-self: flex-end;
+    font-weight: 600;
+}
+
+.call-to-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.call-to-action-container-text-btn {
+    max-height: max-content;
+    width: 800px;
+    background-color: var(--btn-color-call-to-action-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 100px;
+
+}
+
+.title-call-to-action {
+    color: var(--secondarytext-header-link-text-color);
+}
+
+.text-call-to-action {
+    color: var(--secondarytext-header-link-text-color);
+    flex: 1 1 0;
+}
+
+footer {
+    background-color: var(--bg-hero-footer);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-footer {
+    font-size: var(--secondarytext-header-link-text-size);
+    color: var(--secondarytext-header-link-text-color);
+    padding: 20px;
+}
+
+.btn-sign-up-footer {
+    width: 100px;
+    background-color: var(--btn-color-call-to-action-bg);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid white;
+}
+
+.link-sign-up-footer {
+    text-decoration: none;
+    color: var(--text-footer-color);
 }
