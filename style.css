@@ -161,3 +161,30 @@ main {
 .information-items-box-text {
     font-size: var(--hero-secondary-text-size);
 }
+
+.testimonial {
+    width: 100%;
+    background-color: var(--quote-section-bg);
+    display: flex;
+    justify-content: center;
+    padding: 100px 20px;
+}
+
+.container-testimonial {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.testimonial-main-title {
+    max-width: 780px;
+    font-size: var(--quote-text-size);
+    font-weight: var(--quote-text-weight);
+    color: var(--quote-text-color);
+    flex: 1 1 auto;
+}
+
+.testimonial-text {
+    align-self: flex-end;
+    font-weight: 700;
+}
