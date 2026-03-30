@@ -1,0 +1,37 @@
+/*Import da fonte roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Reset css*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Variaveis de estilos*/
+:root {
+    /*Fontes*/
+    --font-roboto: "Roboto", sans-serif;
+
+    /*Cores*/
+    --dark-bg: #1F2937;
+    --hero-main-text-color: #F9FAF8;
+    --hero-secondary-text-color: #E5E7EB;
+    --hero-logo-color: #F9FAF8;
+    --btn-color-call-action-bg: #3882F6;
+    --information-header-text-color: #1F2937;
+    --quote-section-bg: #E5E7EB;
+    --quote-text-color: #1F2937;
+
+    /*Tamanho da fonte (pixels)*/
+    --hero-main-text-size: 48px;
+    --hero-secondary-text-size: 18px;
+    --hero-logo-size: 24px;
+    --information-header-text-size: 36px;
+    --quote-text-size: 36px;
+
+    /*Peso da fonte*/
+    --hero-main-text-weight: 900;
+    --information-header-text-weight: 900;
+    --quote-text-weight: 300;
+}
