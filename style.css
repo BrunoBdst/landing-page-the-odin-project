@@ -23,6 +23,7 @@
     --information-header-text-color: #1F2937;
     --quote-section-bg: #E5E7EB;
     --quote-text-color: #1F2937;
+    --white: #FFFFFF;
 
     /*Tamanho da fonte (pixels)*/
     --hero-main-text-size: 48px;
@@ -41,6 +42,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 header {
@@ -67,7 +69,12 @@ header {
     list-style-type: none;
 }
 
-.list-links-item {
+.list-links-item,
+.header-text,
+.sign-up-link,
+.call-to-action-main-title,
+.call-to-action-text,
+.footer-text {
     font-size: var(--hero-secondary-text-size);
     color: var(--hero-secondary-text-color);
 }
@@ -92,11 +99,6 @@ header {
     color: var(--hero-main-text-color);
 }
 
-.header-text {
-    font-size: var(--hero-secondary-text-size);
-    color: var(--hero-secondary-text-color);
-}
-
 .btn-header,
 .btn-call-to-action {
     width: 120px;
@@ -111,8 +113,6 @@ header {
 }
 
 .sign-up-link {
-    font-size: var(--hero-secondary-text-size);
-    color: var(--hero-secondary-text-color);
     text-decoration: none;
 }
 
@@ -129,8 +129,8 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    gap: 100px;
+    margin: 100px 0;
 }
 
 .information {
@@ -138,7 +138,6 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 50px;
-    margin: 50px 0 0 0;
     text-align: center;
 }
 
@@ -181,7 +180,6 @@ main {
     display: flex;
     justify-content: center;
     padding: 100px 20px;
-    margin: 150px 0 0 0;
 }
 
 .container-testimonial {
@@ -205,14 +203,13 @@ main {
 
 .call-to-action {
     width: 100%;
-    margin: 80px 0;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .container-call-to-action-content {
-    width: 80%;
+    max-width: 900px;
     background-color: var(--btn-color-call-action-bg);
     display: flex;
     align-items: center;
@@ -220,6 +217,7 @@ main {
     border-radius: 10px;
     gap: 10px;
     padding: 40px;
+    flex: 1 1 auto;
 }
 
 .call-to-action-texts {
@@ -228,16 +226,20 @@ main {
 }
 
 .call-to-action-main-title {
-    font-size: var(--hero-secondary-text-size);
-    color: var(--hero-secondary-text-color);
     font-weight: 900;
 }
 
-.call-to-action-text {
-    font-size: var(--hero-secondary-text-size);
-    color: var(--hero-secondary-text-color);
+.btn-call-to-action {
+    border: 1px solid var(--white);
 }
 
-.btn-call-to-action {
-    border: 1px solid #ffffff;
+footer {
+    background-color: var(--dark-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-text {
+    padding: 20px;
 }
